@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tarefas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <div class="mytodo">
+      <h1>
+        My to do list
+    </h1>
+  </div>
+    <div class="top">
+      <input type="text" id="inputNewTask" placeholder="ajouter une tache">
+      <button id="btnAddTask">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div> 
+    <ul id="tasksList">
+    </ul> 
+  </div>  
+  <div id="editionWindow">
+    <button id="editionWindowBtnClose">
+      <i class="fa fa-remove fa-2x"></i>
+    </button>
+    <h2 id="idTaskEdition">here</h2>
+    <hr>
+    <form>
+      <div class="frm-line">
+        <label for="name">Nom</label>
+        <input type="text" id="inputTaskNameEdition">
+      </div>
+      <div class="frm-line">
+        <button id="btnUpdateTask">modifie</button>
+      </div>
+    </form>
+  </div>
+  <div id="backgroundEditWindow"></div>
+  <script src="./tasks.js"></script>
+</body>
+</html>
